@@ -9,3 +9,7 @@
 .VPSocialLinks.VPNavBarSocialLinks.social-links {
     margin-right: 0;
 }
+
+.tagline {
+    max-width: 700px !important;
+}

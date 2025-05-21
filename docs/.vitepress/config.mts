@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "α Piscium",
-  titleTemplate: ':title - α Piscium', 
+  titleTemplate: ':title', 
   description: "α Alpha Piscium",
   lang: 'en-US',
   head: [
@@ -40,82 +40,20 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Misc',
-        collapsed: false,
-        items: [
-          {
-            text: 'About',
-            link: '/',
-            base: '/~/',
-            collapsed: true,
-            items: [
-              { text: 'Timing', link: 'time-management' },
-              { text: 'Learning', link: 'learning' },
-              { text: 'Writing', link: 'writing' },
-              { text: 'Life', link: 'life/', },
-              { text: 'Legacy Projects', link: 'legacy-projects' },
-              { text: 'Devices', link: 'devices' },
-            ]
-          },
-          { 
-            text: 'Teardown', 
-            collapsed: true,
-            items: [
-              { text: 'Teardown', link: '/misc/teardown/tuxedo-teardown' },
-              { text: 'Douglas\'s Voxel', link: '/misc/teardown/douglas-voxel' },
-              { text: 'Gore\'s Voxel', link: '/misc/teardown/gore-voxel' },
-              { text: 'Minecraft Perf Mods', link: '/misc/teardown/minecraft-perf' },
-              { text: '秋棠\'s Flower Engine', link: '/misc/teardown/flower-engine' },
-            ]
-          },
-          { 
-            text: 'Algorithms', 
-            collapsed: true,
-            items: [
-              { 
-                text: 'Metaheuristic', 
-                collapsed: true,
-                items: [
-                  { text: 'Path Finding: A*, JPS', link: '/misc/algorithms/pathfinding' },
-                  { text: 'Hill Climbing', link: '/misc/algorithms/hill-climbing' },
-                  { text: 'Simulated Annealing', link: '/misc/algorithms/simulated-annealing' },
-                  { text: 'Tabu Search', link: '/misc/algorithms/tabu-search' },
-                  { text: 'Genetic Algorithms', link: '/misc/algorithms/genetic-algorithms' },
-                ]
-              },    
-              { text: 'Flood Fill', link: '/misc/algorithms/flood-fill' },
-              { text: 'DFS & BFS', link: '/misc/algorithms/dfs-bfs' },
-              { text: 'Hash Map', link: '/misc/algorithms/hashmap' },
-              { text: 'Basic Data Structures', link: '/misc/algorithms/basic-data-structures' },
-              { 
-                text: 'Patterns', 
-                collapsed: true,
-                items: [
-                  { text: 'State Machine', link: '/misc/algorithms/patterns/state-machine' },
-                  { text: 'Decision Tree', link: '/misc/algorithms/patterns/state-machine' },
-                ]
-              },  
-            ]
-          },
-          { 
-            text: 'Blog', 
-            collapsed: true,
-            base: '/~/blog/',
-            items: [
-              { 
-                text: 'Utility', 
-                collapsed: true,
-                items: [
-                  { text: 'Profiling GPU & CPU', link: '/profiling-gpu' },
-                  { text: 'Cloudflare CDN & Email', link: '/cloudflare-cdn-email' },
-                ]
-              },
-              { text: 'MMD in Unity 6 HDRP', link: 'unity-mmd' },
-              { text: 'Dev: Finish > Perfect', link: 'indiegame' },
-              { text: 'Tech Is Dead', link: 'tech-is-dead' },
-            ]
-          },
-        ]
+        text: 'Showcase',
+        link: 'showcase',
+      },
+      {
+        text: 'Versions',
+        link: 'versions',
+      },
+      {
+        text: 'Implementation',
+        link: 'impl',
+      },
+      {
+        text: 'About',
+        link: 'about',
       },
     ],
 
