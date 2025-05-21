@@ -15,8 +15,12 @@ export default defineConfig({
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-CSR36R1EGY');`],
-    ['script', {}, "console.log('Test Web Init')"]
+    ['script', {}, "console.log('Test Web Init')"],
     // ['script', { async: '', src: '//clustrmaps.com/map_v2.js?d=CjkjO_lbXjEDHs5kmXfnU4xsNf-CgStYgdHc7uoUTcg&cl=ffffff&w=a' }]
+
+    
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css' }],
+    ['script', { defer: '', src: 'https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js' }],
   ],
   cleanUrls: true,  // no .html suffix
   metaChunk: true,  // more Cache?

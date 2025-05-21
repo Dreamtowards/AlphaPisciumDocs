@@ -29,7 +29,7 @@ features:
   - title: SSVBIL Global Illumination
     details: Real-time indirect lighting with minimal performance overhead, leveraging bitmask-based visibility approximation for accurate indirect light bounces in complex scenes.
     link: 
-  - title: "<b>Atmospheric Scattering</b>"
+  - title: "Hybird <b>Atmospheric Scattering</b>"
     details: Physically accurate sky/light shafts using UE Sky Atmosphere and Epipolar Sampling.
   - title: RTWSM Adaptive Shadows # "High-quality, fast, and adaptive <b>Shadows</b>"
     details: Alias-free shadows with variable penumbra via Rectilinear Texture Warping.
@@ -83,6 +83,61 @@ Improvement
 - Added Shared memory optimization to GI Denoiser filter
 - Added fast history clamping to denoiser for sharper shadows and more responsive update
 - Optimized GI reproject branching
+
+<!-- <CompareImage left-image="/assets/screenshots/v1.2.0/1-new.png" right-image="/assets/screenshots/v1.2.0/1-old.png"/> -->
+
+New vs Old
+
+<img-comparison-slider style="width: calc(50% - 2px);">
+  <img slot="first" src="/assets/screenshots/v1.2.0/3-new.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/3-old.png" />
+</img-comparison-slider>
+
+<img-comparison-slider style="width: calc(50% - 2px); float: right">
+  <img slot="first" src="/assets/screenshots/v1.2.0/2-new.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/2-old.png" />
+</img-comparison-slider>
+
+
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/1-new.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/1-old.png" />
+</img-comparison-slider>
+
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/4-new.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/4-old.png" />
+</img-comparison-slider>
+
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/5-new.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/5-old.png" />
+</img-comparison-slider>
+
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/6-new.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/6-old.png" />
+</img-comparison-slider>
+
+Ours vs ITRP
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/7.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/7-itrp.png" />
+</img-comparison-slider>
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/8.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/8-itrp.png" />
+</img-comparison-slider>
+
+Ours vs Kappa
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/7.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/7-kappa.png" />
+</img-comparison-slider>
+<img-comparison-slider>
+  <img slot="first" src="/assets/screenshots/v1.2.0/8.png" />
+  <img slot="second" src="/assets/screenshots/v1.2.0/8-kappa.png" />
+</img-comparison-slider>
 
 <!-- ## About
 
